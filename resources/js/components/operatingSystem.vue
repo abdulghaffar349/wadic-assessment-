@@ -28,7 +28,7 @@ export default {
     },
     data() {
         return {
-            operatingSystem: {id: 1, name: 'CentOS Server 7', price: 0}
+            operatingSystem: this.operatingSystems[0]
         }
     },
     mounted() {

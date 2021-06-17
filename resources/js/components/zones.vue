@@ -28,7 +28,7 @@ export default {
     },
     data() {
         return {
-            zone: {id: 1, city: 'Sydney', code: 'AUS', price: 0}
+            zone: this.zones[0]
         }
     },
     mounted() {

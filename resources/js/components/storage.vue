@@ -32,7 +32,7 @@ export default {
     },
     data() {
         return {
-            tier: {id: 1, name: 'Basic servers', code: 'ioSTOR-250', price: 0.11},
+            tier: this.tiers[0],
             capacity: 100
         }
     },

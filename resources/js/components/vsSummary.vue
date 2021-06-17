@@ -4,7 +4,7 @@
             Summary
         </div>
         <div class="card-body">
-            <div class="row">
+            <div class="col-12">
                 <vue-select :clearable="false" v-model="currency" :options="currencies" label="name"></vue-select>
             </div>
             <b class="text-success row">Compute</b>
@@ -49,6 +49,7 @@
 
 <script>
 import {sum, values} from 'lodash'
+import "vue-select/dist/vue-select.css";
 
 export default {
     name: "vsSummary",
@@ -58,7 +59,7 @@ export default {
     },
     data() {
         return {
-            currency: {id: 1, name: 'Australian Dollar', code: 'AUD', rate: 1.31},
+            currency: this.currencies[0],
             ramPrice: 18.70, //price of ram per 1GB in USD
             cpuPrice: 7.25, //price per 1GHz in USD
             trafficPrice: 0.021 //price per 1gb traffic in USD
