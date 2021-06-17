@@ -13,6 +13,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+//         \App\Models\User::factory(10)->create();
+        $this->call(CurrencySeeder::class);
+        $this->call(ZoneSeeder::class);
+        $this->call(TierSeeder::class);
+        $this->call(OperatingSystemSeeder::class);
     }
 }

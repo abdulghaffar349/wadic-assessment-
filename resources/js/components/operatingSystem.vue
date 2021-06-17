@@ -2,13 +2,14 @@
     <div class="col-6 mb-2">
         <div class="card">
             <div class="card-header">
-                Availability Zone
+                Operating Servers
             </div>
             <div class="card-body">
                 <div class="row">
-                    <div class="col-4">Location:</div>
+                    <div class="col-4">OS:</div>
                     <div class="col-8">
-                        <vue-select :clearable="false" v-model="operatingSystem" :options="operatingSystems" label="name"></vue-select>
+                        <vue-select :clearable="false" v-model="operatingSystem" :options="operatingSystems"
+                                    label="name"></vue-select>
                     </div>
                 </div>
             </div>

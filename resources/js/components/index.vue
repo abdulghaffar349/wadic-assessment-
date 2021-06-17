@@ -10,7 +10,7 @@
             </div>
         </div>
         <div class="col-3">
-            <vsSummary :vs-data="vsData"/>
+            <vsSummary :currencies="currencies" :vs-data="vsData"/>
         </div>
     </div>
 </template>
@@ -44,6 +44,10 @@ export default {
                 {id: 2, name: 'CentOS Server 8', price: 0},
                 {id: 3, name: 'Debian Server 9', price: 0},
                 {id: 4, name: 'Debian Server 10', price: 0},
+            ],
+            currencies: [
+                {id: 1, name: 'Australian Dollar', code: 'AUD', rate: 1.31},
+                {id: 2, name: 'Singapore Dollar', code: 'SGD', rate: 1.34}
             ],
             vsData: {
                 cpu: 0,

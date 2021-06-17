@@ -52,17 +52,13 @@ import {sum, values} from 'lodash'
 
 export default {
     name: "vsSummary",
-    props: ['vsData'],
+    props: ['vsData','currencies'],
     components: {
         "vue-select": () => import('vue-select'),
     },
     data() {
         return {
             currency: {id: 1, name: 'Australian Dollar', code: 'AUD', rate: 1.31},
-            currencies: [
-                {id: 1, name: 'Australian Dollar', code: 'AUD', rate: 1.31},
-                {id: 2, name: 'Singapore Dollar', code: 'SGD', rate: 1.34}
-            ],
             ramPrice: 18.70, //price of ram per 1GB in USD
             cpuPrice: 7.25, //price per 1GHz in USD
             trafficPrice: 0.021 //price per 1gb traffic in USD
